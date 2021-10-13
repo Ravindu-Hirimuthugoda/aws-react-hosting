@@ -1,6 +1,7 @@
 import Card from '../UI/Card';
 import classes from './item.module.css';
 import itemImage from '../../assets/projector.jpg';
+import {Image} from 'cloudinary-react';
 import Button from './Button';
 import { Fragment, useState } from 'react';
 import UnavailableItemDetail from './UnavailableItemDetail';
@@ -29,7 +30,8 @@ const Items = (props)=>{
                     <Card>
                     <div className={classes.item}>
                         <div>
-                            <img src={itemImage} alt='Projector display here'></img>
+                            {/* <img src={itemImage} alt='Projector display here'></img> */}
+                            <Image cloudName="dzp3qzimo" publicId="https://res.cloudinary.com/dzp3qzimo/image/upload/v1634098282/sample.jpg"/>
                         </div>
                         <div className={classes.item}>
                             <div className={classes.detailBilock}>
